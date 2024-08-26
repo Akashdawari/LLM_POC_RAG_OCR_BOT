@@ -1,0 +1,2 @@
+# LLM_POC_RAG_OCR_BOT
+WIP
