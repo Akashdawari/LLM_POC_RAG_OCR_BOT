@@ -1,0 +1,24 @@
+[
+    {
+        "role": "Software Engineer",
+        "company": "Tech Corp",
+        "start_date": "January 2020",
+        "end_date": "Present",
+        "responsibilities": [
+            "Developed and maintained web applications using Python and JavaScript.",
+            "Collaborated with cross-functional teams to define and achieve project goals.",
+            "Implemented automated testing and continuous integration to improve code quality."
+        ]
+    },
+    {
+        "role": "Data Analyst",
+        "company": "Data Insights Inc.",
+        "start_date": "June 2018",
+        "end_date": "December 2019",
+        "responsibilities": [
+            "Analyzed large datasets to identify trends and insights.",
+            "Created data visualizations to communicate findings to stakeholders.",
+            "Automated data processing tasks to improve efficiency."
+        ]
+    }
+]
