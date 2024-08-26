@@ -33,8 +33,10 @@ st.set_page_config(layout="wide")
 def local_css(file_name):
     with open(file_name) as f:
         st.markdown('<style>{}</syle>'.format(f.read()), unsafe_allow_html=True)
-        
-local_css("assets/style/style.css")
+
+base_dir = os.path.dirname(os.path.abspath(__file__))
+css_path = os.path.join(base_dir, 'assets', 'style', 'style.css')
+local_css(css_path)
 
 def hash_password(password):
     return hashlib.sha256(password.encode()).hexdigest()
