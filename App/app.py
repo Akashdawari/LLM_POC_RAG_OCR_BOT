@@ -1,7 +1,8 @@
 import os
 import sys
 from dotenv import load_dotenv
-
+__import__('pysqlite3')
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 # Add project root and individual package directories to sys.path
 project_root = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.join(project_root, "utils"))
