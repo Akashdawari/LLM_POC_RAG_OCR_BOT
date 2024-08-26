@@ -2,14 +2,15 @@ import requests
 import streamlit as st
 from streamlit_lottie import st_lottie
 from streamlit_timeline import timeline
-
+import os
 import json
 
 from assets.template.page1_html import *
 
 # Function to fetch personal data from JSON
 def fetch_data(filname):
-    file_path = f'assets/data/{filname}'
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    file_path = os.path.join(base_dir, 'assets', 'data', filname)
     with open(file_path, 'r') as file:
         data = json.load(file)
     return data
