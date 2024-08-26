@@ -10,7 +10,7 @@ from assets.template.page1_html import *
 # Function to fetch personal data from JSON
 def fetch_data(filname):
     base_dir = os.getcwd()
-    file_path = os.path.join(base_dir, 'assets', 'data', filname)
+    file_path = os.path.join(base_dir,"App", 'assets', 'data', filname)
     with open(file_path, 'r') as file:
         data = json.load(file)
     return data
