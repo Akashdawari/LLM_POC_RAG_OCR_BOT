@@ -13,7 +13,10 @@ def send_email_with_attachment(to_email):
 
     subject = "Exploring Data Science Opportunities – 3+ Years Exp., Currently at LTIMindtree"
     body = "This is a test email sent from Python."
-    attachment_paths = []
+
+    base_dir = os.getcwd()
+    file_path = os.path.join(base_dir,"App", 'assets', 'data', "Akash-Dawari-Resume.pdf")
+    attachment_paths = [file_path]
 
     # Set up the MIME
     msg = MIMEMultipart()

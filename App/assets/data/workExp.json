@@ -1,24 +1,37 @@
 [
     {
-        "role": "Software Engineer",
-        "company": "Tech Corp",
-        "start_date": "January 2020",
+        "role": "Data Science Engineer",
+        "company": "LTIMindtree",
+        "start_date": "June, 2023",
         "end_date": "Present",
         "responsibilities": [
-            "Developed and maintained web applications using Python and JavaScript.",
-            "Collaborated with cross-functional teams to define and achieve project goals.",
-            "Implemented automated testing and continuous integration to improve code quality."
+            "Developed an advanced OCR technique for diverse invoices, reducing custom OCR development time by 80% and saving clients 30% in operational costs.",
+            "Engineered a flexible RAG system with a document ingest pipeline, leveraging re-ranking, Corrective RAG and self-RAG, increasing retrieval accuracy by 25%.",
+            "Created an AI-driven candidate screening platform using Azure AI services, automating 70% of evaluations and reducing recruitment costs.",
+            "Built data pipelines with Python and Azure, automating email data extraction and lowering operational costs."
         ]
     },
     {
-        "role": "Data Analyst",
-        "company": "Data Insights Inc.",
-        "start_date": "June 2018",
-        "end_date": "December 2019",
+        "role": "Machine Learning Engineer",
+        "company": "HomeCapital",
+        "start_date": "Nov, 2022",
+        "end_date": "June, 2023",
         "responsibilities": [
-            "Analyzed large datasets to identify trends and insights.",
-            "Created data visualizations to communicate findings to stakeholders.",
-            "Automated data processing tasks to improve efficiency."
+            "Initiated a housing price prediction model for prime Indian cities, enhancing market strategy for the sales team.",
+            "Analyzed customer bank statements and Equifax data, identifying spending patterns that improved sales pitches and product offerings.",
+            "Contributed to Computer Vision projects like Aadhaar masking, automated bank form verification, and facial image matching for enhanced security.",
+            "Engineered credit risk models using bank statements, Equifax data, and third-party info, reducing NPAs and improving targeted product offerings."
+        ]
+    },
+    {
+        "role": "Senior Analyst",
+        "company": "Capgemini",
+        "start_date": "August, 2021",
+        "end_date": "Octuber, 2022",
+        "responsibilities": [
+            "Spearheaded text data cleaning and preprocessing, improving data quality by 30% and streamlining the ingestion data pipeline for faster analysis.",
+            "Built interactive dashboards using Matplotlib, Seaborn, and Plotly, boosting client decision-making efficiency by 25%.",
+            "Presented user stories and project progress in Agile stand-ups, increasing client satisfaction."
         ]
     }
 ]
