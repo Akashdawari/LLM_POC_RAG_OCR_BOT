@@ -2,7 +2,7 @@
 
 GRADIENT_TEXT = """<div style="display: flex; align-items: center; padding: 20px; background: linear-gradient(to right, #FFD4DD , #000395); border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
             <div style="flex-shrink: 0; margin-right: 20px;">
-                <img src="{0}" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid white; box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);">
+                <img src="data:image/jpeg;base64,{0}" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid white; box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);">
             </div>
             <div style="flex-grow: 1;">
                 <h1 style="font-size: 3em; margin-bottom: 0; color: #e0fbfc;">{1}</h1>
