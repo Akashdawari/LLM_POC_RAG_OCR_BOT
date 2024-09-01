@@ -43,6 +43,9 @@ def page1():
 
     # Header section with gradient text
     full_name = info['Full_Name']
+    base_dir = os.getcwd()
+    file_path = os.path.join(base_dir,"App", 'assets', 'data', "myself.jpg")
+    Profile_picture = "
     gradient_text(f"Hi, I'm {full_name}👋", info["Intro"], info['Profile_picture'])
 
     contact_info_html = CONTANT_STRUCTURE.format(info["Phone"], info["Email"], info["Linkedin"], info["Youtube"], info["Medium"])
