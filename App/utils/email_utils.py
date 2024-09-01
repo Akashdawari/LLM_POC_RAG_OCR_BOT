@@ -12,7 +12,16 @@ def send_email_with_attachment(to_email):
 
 
     subject = "Exploring Data Science Opportunities – 3+ Years Exp., Currently at LTIMindtree"
-    body = "This is a test email sent from Python."
+    body = """Hello,
+
+I hope you're doing well.
+
+I am currently exploring new opportunities in Data Science and wanted to inquire if your company has any openings in this area. I have attached my resume for your review. Please consider my request for a referral if you find my qualifications a good fit.
+
+Thank you for your support.
+
+Best regards,
+Akash Dawari"""
 
     base_dir = os.getcwd()
     file_path = os.path.join(base_dir,"App", 'assets', 'data', "Akash-Dawari-Resume.pdf")
