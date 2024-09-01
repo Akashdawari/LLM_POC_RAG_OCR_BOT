@@ -2,6 +2,7 @@ import requests
 import streamlit as st
 from streamlit_lottie import st_lottie
 from streamlit_timeline import timeline
+import base64
 import os
 import json
 
@@ -14,6 +15,10 @@ def fetch_data(filname):
     with open(file_path, 'r') as file:
         data = json.load(file)
     return data
+
+def get_image_as_base64(image_path):
+    with open(image_path, "rb") as image_file:
+        return base64.b64encode(image_file.read()).decode('utf-8')
 
 # Function to load Lottie animation from URL
 def load_lottieurl(url: str):
@@ -45,8 +50,9 @@ def page1():
     full_name = info['Full_Name']
     base_dir = os.getcwd()
     profile_pic_file_path = os.path.join(base_dir,"App", 'assets', 'data', "myself.jpg")
+    image_base64 = get_image_as_base64(profile_pic_file_path)
     
-    gradient_text(f"Hi, I'm {full_name}👋", info["Intro"], profile_pic_file_path)
+    gradient_text(f"Hi, I'm {full_name}👋", info["Intro"], image_base64)
 
     contact_info_html = CONTANT_STRUCTURE.format(info["Phone"], info["Email"], info["Linkedin"], info["Youtube"], info["Medium"])
 
