@@ -17,9 +17,9 @@ from prompt_template import TEMPLATE
 warnings.filterwarnings("ignore")
 
 class Item(BaseModel):
-    ItemName: str = Field(description="""Item name mentioned in the text""")
-    ItemQuantity: int = Field(description="""number of items or the quanity of the item mentioned in the text""")
-    ItemPrice: float = Field(description = """calue or the price of the item""")
+    ItemName: Optional[str] = Field(description="""Item name mentioned in the text""")
+    ItemQuantity: Optional[int] = Field(description="""number of items or the quanity of the item mentioned in the text""")
+    ItemPrice: Optional[float] = Field(description = """calue or the price of the item""")
 
 class Invoice(BaseModel):
     IsInvoice: bool = Field(description="""True if the text is of any kind of invoice or receipt else False if its other text.""")
