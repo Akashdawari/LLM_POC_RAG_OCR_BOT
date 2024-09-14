@@ -20,6 +20,8 @@ def page2():
             azure_endpoint = st.text_input("Enter Azure OpenAI Endpoint")
             azure_deployment = st.text_input("Enter Azure OpenAI Deployment")
             azure_version = st.text_input("Enter Azure OpenAI Version")
+        elif model_type == "Google Gemini":
+            pass
         if st.button("Submit"):
             st.session_state.model_type = model_type
             if model_type == "Azure OpenAI":
@@ -29,6 +31,8 @@ def page2():
                 st.session_state.azure_version = azure_version
             elif model_type == "OpenAI":
                 st.session_state.openai_key = openai_key
+            elif model_type == "Google Gemini":
+                pass
             st.rerun()
 
     else:
