@@ -19,7 +19,7 @@ def llm_instance_builder():
                                 api_version=st.session_state.azure_version,
                                 azure_endpoint =st.session_state.azure_endpoint)
 
-    elif "Google Gemini" == st.session_state.model_type:
+    elif "Google Gemini (Free)" == st.session_state.model_type:
         llm = ChatGoogleGenerativeAI(
                             model="gemini-1.5-flash",
                             temperature=0,
