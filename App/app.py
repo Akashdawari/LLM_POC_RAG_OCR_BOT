@@ -134,7 +134,7 @@ pages = {
     "Home": page1,
     "RAG QnA": page2,
     "Extract Data": page3,
-    "Page 4": page4,
+    "Agentic Bot": page4,
 }
 
 
