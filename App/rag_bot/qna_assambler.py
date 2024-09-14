@@ -21,7 +21,7 @@ def page2():
             azure_deployment = st.text_input("Enter Azure OpenAI Deployment")
             azure_version = st.text_input("Enter Azure OpenAI Version")
         elif model_type == "Google Gemini (Free)":
-            pass
+            st.warning("Note: By selecting this free model, you may experience limited performance and receive unintended results, as it is less powerful compared to premium models.")
         if st.button("Submit"):
             st.session_state.model_type = model_type
             if model_type == "Azure OpenAI":
