@@ -9,10 +9,11 @@ from llm_component import key_extractor
 
 def page3():
 
+    
     if ('model_type' not in st.session_state):
         st.subheader("Set Environment Variables")
         model_type = st.selectbox("Select type of LLM",
-                                    ("OpenAI", "Azure OpenAI"))
+                                    ("OpenAI", "Azure OpenAI", "Google Gemini (Free)"))
         if model_type == "OpenAI":
             openai_key = st.text_input("Enter OpenAI Key")
         elif model_type == "Azure OpenAI":
@@ -20,6 +21,8 @@ def page3():
             azure_endpoint = st.text_input("Enter Azure OpenAI Endpoint")
             azure_deployment = st.text_input("Enter Azure OpenAI Deployment")
             azure_version = st.text_input("Enter Azure OpenAI Version")
+        elif model_type == "Google Gemini (Free)":
+            pass
         if st.button("Submit"):
             st.session_state.model_type = model_type
             if model_type == "Azure OpenAI":
@@ -29,8 +32,9 @@ def page3():
                 st.session_state.azure_version = azure_version
             elif model_type == "OpenAI":
                 st.session_state.openai_key = openai_key
+            elif model_type == "Google Gemini (Free)":
+                pass
             st.rerun()
-
     else:
         st.title("Key-Value Extractor")
 
