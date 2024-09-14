@@ -92,6 +92,7 @@ def key_extractor(raw_text, type_file):
         chain = LLMChain(llm=llm_instance_builder(), prompt=chat_prompt)
 
         output = chain.run(text=raw_text)
+        print(output)
 
         result = parser.parse(output)
 
